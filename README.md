@@ -15,7 +15,11 @@ Personal academic website for Yubin Kim (MIT Operations Research Center), built 
 | Blog (hidden until first post) | `_posts/YYYY-MM-DD-title.md`, `_pages/blog.md` |
 | Site name, domain, search metadata | `_config.yml` |
 
-**Local override:** `_includes/metadata.liquid` is a copy of the `al_folio_core` gem's file. Its one change is that the home page `<title>` uses `home_title` from `_config.yml`. If you upgrade the gem, run `bundle exec al-folio upgrade overrides diff _includes/metadata.liquid` to check for upstream changes.
+**Local overrides** of `al_folio_core` files. After upgrading the gem, compare each with `bundle exec al-folio upgrade overrides diff <path>`:
+
+- `_includes/metadata.liquid`: the home page `<title>` uses `home_title` from `_config.yml`.
+- `_layouts/about.liquid`: the profile column (photo, then social icons, then affiliation) sits beside the name, and the bottom social block is removed.
+- `assets/css/main.scss`: identical to the gem's, plus `@use "custom";` at the end, which loads `_sass/_custom.scss`. That file hides the "ctrl k / ⌘ k" search hint, styles the icon row under the photo, and fixes the order on phones.
 
 ## Preview locally
 

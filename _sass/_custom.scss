@@ -1,0 +1,87 @@
+// Local site styles, loaded last from assets/css/main.scss.
+
+// Navbar search: show only the magnifying glass, not the "ctrl k" / "⌘ k" shortcut hint.
+// (al_search's shortcut-key.js rewrites the label on macOS, so hide the text rather than edit it.)
+#search-toggle .nav-link {
+  font-size: 0;
+
+  i {
+    font-size: 1rem;
+  }
+}
+
+// Profile column: social icons in a compact row under the photo.
+.profile .profile-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
+  margin: 0.9rem 0 0.4rem;
+  font-size: 1.25rem;
+  line-height: 1;
+
+  a {
+    color: var(--global-text-color);
+    display: inline-flex;
+    align-items: center;
+
+    i::before {
+      color: var(--global-text-color);
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      i::before {
+        color: var(--global-theme-color);
+      }
+    }
+
+    // Custom image logos (e.g. OpenReview)
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 2px;
+    }
+  }
+}
+
+// Affiliation and location: small, centered lines under the icons.
+.profile .more-info {
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.25rem;
+
+  p {
+    display: block;
+    margin: 0;
+  }
+}
+
+// Phones: the profile column comes first in the HTML (so it can float level with the name on desktop).
+// Put the name and subtitle back on top and keep the photo a reasonable size.
+@media (max-width: 575.98px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+
+    > .post-header {
+      order: -1;
+    }
+  }
+
+  .profile {
+    margin: 0 0 1rem;
+
+    figure,
+    picture {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
