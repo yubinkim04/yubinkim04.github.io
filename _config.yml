@@ -39,7 +39,7 @@ repo_theme_dark: dark # https://github.com/stats-organization/github-stats-exten
 # `user@host` and no `mailto:` for harvesters to scrape, and clicking one copies
 # it to the clipboard instead of opening a mail client.
 # See "Protecting email addresses from scrapers" in docs/CUSTOMIZE.md.
-protect_email: true
+protect_email: false # off on purpose: maximum visibility for recruiters and collaborators
 
 # Off by default: the free public github-profile-trophy instance is disabled
 # (its Vercel deployment answers HTTP 402 / DEPLOYMENT_DISABLED), so every trophy
@@ -101,7 +101,7 @@ al_folio:
 navbar_fixed: true
 footer_fixed: true
 search_enabled: true
-socials_in_search: false # the search index would embed a percent-encoded mailto:, bypassing protect_email
+socials_in_search: true
 posts_in_search: true
 bib_search: true
 

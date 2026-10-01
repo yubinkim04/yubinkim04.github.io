@@ -21,11 +21,7 @@ layout: default
         %}
       {% endif %}
       {% if page.social %}
-        {% comment %} jekyll-socials emits a plain mailto: link; al_email_protect_html rewrites it to the split, click-to-copy form when protect_email is on. {% endcomment %}
-        {% capture social_html %}{% social_links %}{% endcapture %}
-        {% comment %} al_email_protect 1.0.1 folds the icon's title='Email' attribute into its class value; move it back out. {% endcomment %}
-        {% assign protected_social_html = social_html | al_email_protect_html | replace: "al-email-protect title='Email'", 'al-email-protect" title="Email' %}
-        <div class="profile-social">{{ protected_social_html }}</div>
+        <div class="profile-social">{% social_links %}</div>
       {% endif %}
       {% if page.profile.more_info %}
         <div class="more-info">{{ page.profile.more_info }}</div>
