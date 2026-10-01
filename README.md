@@ -18,7 +18,7 @@ Personal academic website for Yubin Kim (MIT Operations Research Center), built 
 **Local overrides** of `al_folio_core` files. After upgrading the gem, compare each with `bundle exec al-folio upgrade overrides diff <path>`:
 
 - `_includes/metadata.liquid`: the home page `<title>` uses `home_title` from `_config.yml`.
-- `_layouts/about.liquid`: the profile column (photo, then social icons, then affiliation) sits beside the name, and the bottom social block is removed.
+- `_layouts/about.liquid`: the profile column (photo, then social icons, then affiliation) sits beside the name, and the bottom social block is removed. The icon row goes through `al_email_protect_html`, so with `protect_email: true` the email icon copies the address on click and the HTML never contains it. `socials_in_search` is off for the same reason.
 - `assets/css/main.scss`: identical to the gem's, plus `@use "custom";` at the end, which loads `_sass/_custom.scss`. That file hides the "ctrl k / ⌘ k" search hint, styles the icon row under the photo, and fixes the order on phones.
 
 ## Preview locally
