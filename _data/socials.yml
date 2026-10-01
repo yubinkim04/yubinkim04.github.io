@@ -1,0 +1,14 @@
+# Social links shown on the home page, in the order listed.
+# Every profile listed here should also link back to your site. See the jekyll-socials plugin for supported keys:
+# https://github.com/george-gca/jekyll-socials
+email: yubinkim@mit.edu
+scholar_userid: 5-4c1ZAAAAAJ # Google Scholar
+orcid_id: 0009-0001-9631-1828
+github_username: yubinkim04
+linkedin_username: yubin-kim-yk04
+x_username: yubinkim_ai
+cv_pdf: /assets/pdf/Yubin_CV.pdf
+openreview: # custom entry: this jekyll-socials version has no built-in OpenReview key
+  logo: /assets/img/openreview.png
+  title: OpenReview
+  url: https://openreview.net/profile?id=~Yubin_Kim4

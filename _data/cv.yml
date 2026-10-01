@@ -1,0 +1,56 @@
+# CV data rendered at /cv/. The CV page is hidden from the navbar (_pages/cv.md, nav: false)
+# until the TODOs below are filled in.
+cv:
+  name: Yubin Kim
+  label: SM/PhD Student, MIT Operations Research Center
+  email: "" # TODO
+  location: Cambridge, MA
+  image: ""
+  summary: SM/PhD student at the MIT Operations Research Center advised by Prof. Giannis Daras, working on agentic AI with a background in sequence modeling.
+
+  social_networks: [] # TODO: e.g. - network: GitHub / username: your-handle
+
+  sections:
+    Education:
+      - institution: Massachusetts Institute of Technology
+        location: Cambridge, MA
+        url: https://orc.mit.edu/
+        area: "Operations Research (advisor: Giannis Daras)"
+        studyType: PhD
+        start_date: 2026-09
+        end_date: present
+      # TODO: add your undergraduate / previous degree here
+
+    Publications:
+      - title: "StretchTime: Adaptive Time Series Forecasting via Symplectic Attention"
+        authors:
+          - Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu
+        publisher: International Conference on Machine Learning (ICML)
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2602.08983
+
+      - title: "Beyond Similarity: Temporal Operator Attention for Time Series Analysis"
+        authors:
+          - Jevon Twitty, Vinh Pham, Nitiwith Rotchanarak, Viresh Pati, Yubin Kim, Shihao Yang, Jiecheng Lu
+        publisher: arXiv preprint arXiv:2605.11287
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2605.11287
+
+      - title: "CAPS: Unifying Attention, Recurrence, and Alignment in Transformer-based Time Series Forecasting"
+        authors:
+          - Viresh Pati, Yubin Kim, Vinh Pham, Jevon Twitty, Shihao Yang, Jiecheng Lu
+        publisher: arXiv preprint arXiv:2602.02729
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2602.02729
+
+      - title: "ZeroS: Zero-Sum Linear Attention for Efficient Transformers"
+        authors:
+          - Jiecheng Lu, Xu Han, Yan Sun, Viresh Pati, Yubin Kim, Siddhartha Somani, Shihao Yang
+        publisher: Advances in Neural Information Processing Systems (NeurIPS), Spotlight
+        releaseDate: 2025
+        url: https://arxiv.org/abs/2602.05230
+
+    Interests:
+      - name: Research
+        icon: fa-solid fa-tag
+        keywords: "Agentic AI, Sequence Modeling, Attention Mechanisms, Time Series Forecasting"

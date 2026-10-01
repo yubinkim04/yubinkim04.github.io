@@ -1,0 +1,12 @@
+# Badge colors and links for the "abbr" field in _bibliography/papers.bib
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#6a3d9a"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#1f78b4"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
