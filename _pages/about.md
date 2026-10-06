@@ -28,7 +28,7 @@ I'm advised by [Prof. Giannis Daras](https://giannisdaras.com/).
 
 I'm exploring **agentic AI**: how agents plan, act, and learn over long horizons, and how to make long-horizon agentic systems more efficient.
 
-Before MIT, I studied at Georgia Tech, where I was advised by [Prof. Shihao Yang](https://sites.gatech.edu/shihao-yang/) and mentored by [Jiecheng Lu](https://ljc-fvnr.github.io/), working on **time series analysis** and **sequence modeling**. I've worked on attention mechanisms and positional encodings for Transformers, including efficient linear attention ([ZeroS](https://arxiv.org/abs/2602.05230), NeurIPS 2025 Spotlight) and time-warp–adaptive positional embeddings for forecasting ([StretchTime](https://arxiv.org/abs/2602.08983), ICML 2026).
+Before MIT, I studied at Georgia Tech, where I worked on **time series analysis** and **sequence modeling**, advised by [Prof. Shihao Yang](https://sites.gatech.edu/shihao-yang/) and mentored by [Jiecheng Lu](https://ljc-fvnr.github.io/). I've worked on attention mechanisms and positional encodings for Transformers, including efficient linear attention ([ZeroS](https://arxiv.org/abs/2602.05230), NeurIPS 2025 Spotlight) and time-warp–adaptive positional embeddings for forecasting ([StretchTime](https://arxiv.org/abs/2602.08983), ICML 2026).
 
 I'm always happy to chat about research, collaborations, or opportunities. Reach me at [yubinkim@mit.edu](mailto:yubinkim@mit.edu).
 
